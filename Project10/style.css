@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #161623;
+    /* background-image: url(https://thumbs.dreamstime.com/b/trendy-seamless-pattern-small-bright-colored-geometric-shapes-lines-black-background-colorful-simple-backdrop-vector-106379441.jpg); */
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.c1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 100%;
+    top: -10%;
+    left: -10%;
+    z-index: -1;
+    background: linear-gradient(rgba(255, 0, 0, 0.522), rgba(255, 0, 255, 0.473));
+}
+
+.c2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* border-radius: 100%; */
+    bottom: -10%;
+    right: -10%;
+    z-index: -1;
+    background: linear-gradient(#e6e91e, rgba(13, 244, 82, 0.4));
+}
+
+.c3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 15%;
+    left: 10%;
+    z-index: -1;
+    background: linear-gradient(rgba(13, 175, 244, 0.4), #a21ee9);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    max-width: 600px;
+    max-height: 90vh;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to right top, #d16ba5aa, #c777b9aa, #ba83caaa, #aa8fd8aa, #9a9ae1aa, #8aa7ecaa, #79b3f4aa, #69bff8aa, #52cffeaa, #41dfffaa, #46eefaaa, #5ffbf1aa);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.character-img{
+    width: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+h1{
+    color: #eee;
+}
+
+button{
+    border: none;
+    padding: .7rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.319);
+    color: #eee;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: #eee;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+a{
+    color: #eee;
+    /* text-decoration: none; */
+}
+
+.species, .gender, .homeworld{
+    text-transform: capitalize;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+}

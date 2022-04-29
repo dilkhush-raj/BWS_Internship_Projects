@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">  <div class="c1"></div><div class="c2"></div><div class="c3"></div>
+      <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.4">
+      
+        <div class="content">
+          <div>
+            <h1 class="name">Rey</h1>
+            <ul>
+              <li>
+                <span><b>Born : </b><span class="born">15</span> ABY</span>
+              </li>
+              <li>
+                <span><b>Height : </b><span class="height">1.7</span> m</span>
+              </li>
+              <li>
+                <span><b>Mass : </b><span class="mass">54</span> Kg</span></li>
+              <li>
+                <span><b>Species : </b><span class="species">Human</span></span>
+              </li>
+              <li>
+                <span><b>Gender : </b><span class="gender">Female</span></span>
+              </li>
+              <li>
+                <span><b>Homeworld : </b><span class="homeworld">Jakku</span></span>
+              </li>
+              <li>
+                <span><b>Wiki : </b><a class="wiki" href="http://starwars.wikia.com/wiki/Rey" target="_blank">Read Wiki</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="right-side"><img src="https://vignette.wikia.nocookie.net/starwars/images/f/f8/ReyTLJEntertainmentWeeklyNovember.png" alt="" class="character-img"><button>Generate</button></div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
